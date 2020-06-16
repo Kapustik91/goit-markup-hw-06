@@ -892,3 +892,7 @@ button.list:nth-child(5n) {
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
+
+textarea {
+  resize: none;
+}

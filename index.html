@@ -527,9 +527,39 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <form class="js-speaker-form">
+          <label for="name">Имя</label>
+          <input type="text" name="name" id="name" />
+
+          <br />
+
+          <label for="tel">Телефон</label>
+          <input type="tel" name="tel" id="tel" />
+
+          <br />
+
+          <label for="mail">Почта</label>
+          <input type="email" name="mail" id="mail" />
+
+          <br />
+
+          <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+
+          <br />
+
+          <input type="checkbox" name="agreement" id="agreement" />
+          <label for="agreement"
+            >Соглашаюсь с рассылкой и принимаю Условия договора</label
+          >
+
+          <br />
+
+          <button type="submit">Отправить</button>
+        </form>
         <button data-modal-close>Закрыть</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/js-speaker-form.js"></script>
   </body>
 </html>
