@@ -511,16 +511,28 @@
         </div>
 
         <div class="subscribe">
-          <b class="our-socials">Подпишитесь на нашу рассылку</b>
-          <a href="" class="button secondary"
-            >Подписаться
-            <svg class="icon-send" width="24" height="24">
-              <use href="./image/symbol-defs.svg#icon-icon-send-1"></use>
-            </svg>
-          </a>
-        </div>
+          <form action="" class="subscribe-form">
+            <b class="our-socials">Подпишитесь на нашу рассылку</b>
+            <input
+              type="email"
+              class="subscribe-input"
+              name="email"
+              id="mail"
+              placeholder=" "
+            />
+            <label for="mail" class="subscribe-label">E-mail</label>
+          </form>
       </div>
-      <p class="developed">2020 | Developed by GoIT Students</p>
+
+      <div class="subscribe-button">
+        <button class="button secondary" type="submit">
+          Подписаться
+          <svg class="icon-send" width="24" height="24">
+            <use href="./image/symbol-defs.svg#icon-icon-send-1"></use>
+          </svg>
+        </button>
+      </div>
+
     </footer>
 
     <!--Модальное окно-->
