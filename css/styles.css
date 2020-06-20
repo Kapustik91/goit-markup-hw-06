@@ -495,14 +495,13 @@ h4 {
   transform: scale(1.2);
 }
 
-.subscribe-button {
-}
-
 .button.secondary {
-  display: inline-flex;
+  display: flex;
+  align-items: center;
   justify-content: center;
+  margin-left: 12px;
   font-weight: 900;
-  fill: inherit;
+  fill: var(--primary-white-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -510,6 +509,17 @@ h4 {
 .button.secondary:hover {
   fill: var(--accent-color);
 }
+
+.button-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+}
+
 /*Footer*/
 
 .footer {
@@ -522,7 +532,7 @@ h4 {
 .flex-footer {
   display: flex;
   align-items: baseline;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -553,8 +563,9 @@ h4 {
 }
 
 .join-block {
+  display: block;
   width: 207px;
-  margin-right: 90px;
+  margin-right: 94px;
 }
 
 .join-links-list {
@@ -613,8 +624,14 @@ h4 {
 }
 
 .subscribe {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
   position: relative;
-  width: 482px;
+}
+
+.subscribe-form {
+  width: 358px;
 }
 
 .subscribe-input {
@@ -653,11 +670,6 @@ h4 {
 
 .icon-send {
   margin-left: 10px;
-  fill: var(--primary-white-color);
-}
-
-.icon-send:hover {
-  fill: var(--accent-color);
 }
 
 /* .developed {
@@ -957,6 +969,7 @@ textarea {
   margin: 0;
   padding: 14px 42px;
   margin-bottom: 28px;
+  cursor: pointer;
 }
 
 .form-label {
@@ -1076,9 +1089,20 @@ textarea {
   height: 30px;
 }
 
+.modal-icon-close {
+  fill: #000000;
+  cursor: pointer;
+}
+
+.modal-icon-close:hover,
+.modal-icon-close:focus {
+  fill: var(--accent-color);
+}
+
 .button.form-button {
   width: 200px;
   height: 50px;
   padding: 10px 56px;
   margin-left: 100px;
+  cursor: pointer;
 }
